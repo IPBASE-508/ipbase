@@ -1,8 +1,11 @@
 package com.ipbase.DataBack.controller;
 
+import com.ipbase.DataBack.dto.AchievementInfoDTO;
 import com.ipbase.DataBack.entity.AchievementInfo;
+import com.ipbase.DataBack.entity.PictureInfo;
 import com.ipbase.DataBack.service.AchievementInfoService;
-import com.ipbase.DataBack.utils.CommonDTO;
+import com.ipbase.DataBack.service.PictureInfoService;
+import com.ipbase.DataBack.dto.CommonDTO;
 import com.ipbase.DataBack.utils.CommonDTOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 
 /**
+ * TODO 有测试数据示例未补充完
  * @author tianyi
  * @date 2019-05-04 21:54
  */
@@ -21,7 +25,10 @@ import java.util.Date;
 public class AchievementInfoController implements CommonController<AchievementInfo>{
 
     @Autowired
-    private AchievementInfoService service;
+    private AchievementInfoService achievementInfoService;
+
+    @Autowired
+    private PictureInfoService pictureInfoService;
 
     /**
      * @apiDefine Achievement 成果
@@ -35,7 +42,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
      */
 
     /**
-     * @api {post} /achievements/add 添加成果(TODO 欠文件上传)
+     * @api {post} /achievements/add 添加成果
      * @apiGroup Achievement
      * @apiParam {int} authorId 作者账号id
      * @apiParam {String} name 成果名称(标题)
@@ -61,7 +68,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
     public CommonDTO add(AchievementInfo data){
         try{
             data.setCreateTime(new Date());
-            return CommonDTOUtil.success(service.addSelective(data));
+            return CommonDTOUtil.success(achievementInfoService.addSelective(data));
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -96,7 +103,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
             if (data.getId() == 0){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
-            return CommonDTOUtil.success(service.updateSelective(data));
+            return CommonDTOUtil.success(achievementInfoService.updateSelective(data));
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -127,7 +134,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
             if (data.getId() == 0 || data.getIds().length == 0){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
-            return CommonDTOUtil.success(service.delete(data));
+            return CommonDTOUtil.success(achievementInfoService.delete(data));
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -170,7 +177,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
     @GetMapping("/list")
     public CommonDTO list(AchievementInfo data) {
         try{
-            return CommonDTOUtil.success(service.listByPage(data));
+            return CommonDTOUtil.success(achievementInfoService.listByPage(data));
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -178,7 +185,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
     }
 
     /**
-     * @api {get} /achievements/one 获取单个成果详情(TODO 欠加图片)
+     * @api {get} /achievements/one 获取单个成果详情
      * @apiGroup Achievement
      * @apiParam {int} id 成果id
      * @apiSuccessExample Success-Request:
@@ -201,7 +208,31 @@ public class AchievementInfoController implements CommonController<AchievementIn
     "brief": "以后大家可以用来管理官网的数据，可以找人做展示网站了",
     "author": "曾天臆",
     "authorId": 1,
-    "createTime": "2019-05-07T08:16:57.000+0000"
+    "createTime": "2019-05-07T08:16:57.000+0000",
+    "pictures": [
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 1,
+    "name": "基地logo.png",
+    "achievementId": 1,
+    "createTime": "2019-05-13T23:47:25.000+0000"
+    },
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 2,
+    "name": "哈哈哈开心.jpg",
+    "achievementId": 1,
+    "createTime": "2019-05-13T23:47:50.000+0000"
+    }
+    ]
     }
      * }
      */
@@ -212,7 +243,16 @@ public class AchievementInfoController implements CommonController<AchievementIn
             if (data.getId() == 0){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
-            return CommonDTOUtil.success(service.getOneById(data));
+            // 按id搜索结果，并创建最基本的DTO
+            AchievementInfoDTO rt = new AchievementInfoDTO(achievementInfoService.getOneById(data));
+            // 创建用于搜索的对象
+            PictureInfo search = new PictureInfo();
+            // 设置条件：按成就id查询
+            search.setAchievementId(data.getId());
+            // 补充图片信息到 DTO
+            rt.setPictures(pictureInfoService.listByObjectPage(search));
+            // 返回
+            return CommonDTOUtil.success(rt);
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -260,7 +300,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
             if (data.getAuthorId() == 0){
                 return CommonDTOUtil.error(403,"请传入创建者id",data);
             }
-            return CommonDTOUtil.success(service.listByObjectPage(data));
+            return CommonDTOUtil.success(achievementInfoService.listByObjectPage(data));
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);

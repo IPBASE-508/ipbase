@@ -31,6 +31,18 @@ public class PictureInfoServiceImpl implements PictureInfoService {
     }
 
     /**
+     * 条件：成果id
+     * @param data
+     * @return
+     */
+    @Override
+    public int countByExample(PictureInfo data) {
+        PictureInfoExample example = new PictureInfoExample();
+        example.or().andAchievementIdEqualTo(data.getAchievementId());
+        return (int) d.countByExample(example);
+    }
+
+    /**
      * 更新记录
      *
      * @param data

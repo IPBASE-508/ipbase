@@ -32,6 +32,17 @@ public class MaterialInfoServiceImpl implements MaterialInfoService {
     }
 
     /**
+     * 条件：无
+     * @param data
+     * @return
+     */
+    @Override
+    public int countByExample(MaterialInfo data) {
+        MaterialInfoExample example = new MaterialInfoExample();
+        return (int) d.countByExample(example);
+    }
+
+    /**
      * 更新记录
      *
      * @param data

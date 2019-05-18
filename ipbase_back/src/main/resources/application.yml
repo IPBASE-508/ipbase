@@ -17,6 +17,9 @@ logging:
   level:
      com.ipbase.DataBack.dao : debug
 
+path:
+  picture: ./pictures
+
 server:
   servlet:
     context-path: /ipbase

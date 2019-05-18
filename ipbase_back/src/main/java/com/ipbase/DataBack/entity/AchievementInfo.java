@@ -7,6 +7,16 @@ import java.util.Date;
  * 成果信息表
  */
 public class AchievementInfo extends PageEntity implements Serializable {
+
+    public AchievementInfo(Integer id, String name, String brief, String author, Integer authorId, Date createTime) {
+        this.id = id;
+        this.name = name;
+        this.brief = brief;
+        this.author = author;
+        this.authorId = authorId;
+        this.createTime = createTime;
+    }
+
     private Integer id;
 
     private String name;

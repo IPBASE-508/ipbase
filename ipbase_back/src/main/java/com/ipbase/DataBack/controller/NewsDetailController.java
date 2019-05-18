@@ -2,15 +2,13 @@ package com.ipbase.DataBack.controller;
 
 import com.ipbase.DataBack.entity.NewsDetail;
 import com.ipbase.DataBack.service.NewsDetailService;
-import com.ipbase.DataBack.utils.CommonDTO;
+import com.ipbase.DataBack.dto.CommonDTO;
 import com.ipbase.DataBack.utils.CommonDTOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Date;
 
 /**
  * @author tianyi

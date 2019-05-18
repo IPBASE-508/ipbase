@@ -1,7 +1,7 @@
 package com.ipbase.DataBack.controller;
 import com.ipbase.DataBack.entity.UserInfo;
 import com.ipbase.DataBack.service.UserInfoService;
-import com.ipbase.DataBack.utils.CommonDTO;
+import com.ipbase.DataBack.dto.CommonDTO;
 import com.ipbase.DataBack.utils.CommonDTOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

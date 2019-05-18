@@ -2,7 +2,7 @@ package com.ipbase.DataBack.controller;
 
 import com.ipbase.DataBack.entity.PictureInfo;
 import com.ipbase.DataBack.service.PictureInfoService;
-import com.ipbase.DataBack.utils.CommonDTO;
+import com.ipbase.DataBack.dto.CommonDTO;
 import com.ipbase.DataBack.utils.CommonDTOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,12 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 
 /**
+ * TODO 有测试数据示例未补充完
  * @author tianyi
  * @date 2019-05-04 21:55
  */
 @RestController
 @RequestMapping("/picture")
-public class PictureInfoController implements CommonController<PictureInfo>{
+public class PictureInfoController{
 
     @Autowired
     private PictureInfoService service;
@@ -35,28 +36,33 @@ public class PictureInfoController implements CommonController<PictureInfo>{
      */
 
     /**
-     * @api {post} /picture/add 新增图片(TODO 欠文件上传)
+     * @api {post} /picture/addByAchievement 新增图片
      * @apiGroup Picture
      * @apiParam {int} achievementId 成果id
-     * @apiParam {String} name 图片名称
+     * @apiParam {String[]} names 图片名称数组
      * @apiSuccessExample Success-Request:
      * {}
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
      * {}
      */
-    @Override
     @PostMapping("/add")
-    public CommonDTO add(PictureInfo data){
+    public CommonDTO add(int achievementId, String[] names){
         try{
-            if (data.getAchievementId() == 0){
-                return CommonDTOUtil.error(403,"请传入成果id",data);
+            if (achievementId == 0){
+                return CommonDTOUtil.error(403,"请传入成果id");
             }
-            data.setCreateTime(new Date());
-            return CommonDTOUtil.success(service.addSelective(data));
+            for (String name : names){
+                PictureInfo data = new PictureInfo();
+                data.setCreateTime(new Date());
+                data.setName(name);
+                data.setAchievementId(achievementId);
+                service.addSelective(data);
+            }
+            return CommonDTOUtil.success();
         }catch (Exception e){
             e.printStackTrace();
-            return CommonDTOUtil.error(500,e.getMessage(),data);
+            return CommonDTOUtil.error(500,e.getMessage());
         }
     }
 
@@ -71,7 +77,6 @@ public class PictureInfoController implements CommonController<PictureInfo>{
      * @apiSuccessExample Success-Response:
      * {}
      */
-    @Override
     @PostMapping("/update")
     public CommonDTO update(PictureInfo data) {
         try{
@@ -96,7 +101,6 @@ public class PictureInfoController implements CommonController<PictureInfo>{
      * @apiSuccessExample Success-Response:
      * {}
      */
-    @Override
     @PostMapping("/delete")
     public CommonDTO delete(PictureInfo data) {
         try{
@@ -111,7 +115,7 @@ public class PictureInfoController implements CommonController<PictureInfo>{
     }
 
     /**
-     * @api {method} /picture/list 分页获取所有图片
+     * @api {get} /picture/list 分页获取所有图片
      * @apiGroup Picture
      * @apiParam {int} page 页号
      * @apiParam {int} rows 每页行数
@@ -121,7 +125,6 @@ public class PictureInfoController implements CommonController<PictureInfo>{
      * @apiSuccessExample Success-Response:
      * {}
      */
-    @Override
     @GetMapping("/list")
     public CommonDTO list(PictureInfo data) {
         try{
@@ -142,7 +145,6 @@ public class PictureInfoController implements CommonController<PictureInfo>{
      * @apiSuccessExample Success-Response:
      * {}
      */
-    @Override
     @GetMapping("/one")
     public CommonDTO one(PictureInfo data) {
         try{
@@ -168,7 +170,6 @@ public class PictureInfoController implements CommonController<PictureInfo>{
      * @apiSuccessExample Success-Response:
      * {}
      */
-    @Override
     @GetMapping("/pageByAchievement")
     public CommonDTO listByFilter(PictureInfo data) {
         try{

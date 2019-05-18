@@ -1,4 +1,4 @@
-package com.ipbase.DataBack.utils;
+package com.ipbase.DataBack.dto;
 
 
 /**
@@ -16,6 +16,8 @@ public class CommonDTO<T> {
 
     /* 内容主体 */
     private T data;
+
+    private Integer allDataNum;
 
 	public Integer getResultCode() {
 		return resultCode;
@@ -40,6 +42,12 @@ public class CommonDTO<T> {
 	public void setData(T data) {
 		this.data = data;
 	}
-    
-    
+
+	public Integer getAllDataNum() {
+		return allDataNum;
+	}
+
+	public void setAllDataNum(Integer allDataNum) {
+		this.allDataNum = allDataNum;
+	}
 }

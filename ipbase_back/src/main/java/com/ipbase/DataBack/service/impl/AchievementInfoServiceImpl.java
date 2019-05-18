@@ -32,6 +32,17 @@ public class AchievementInfoServiceImpl implements AchievementInfoService{
     }
 
     /**
+     * 按条件获取总数据量（方便前端分页）
+     * 条件：无
+     * @param data
+     * @return
+     */
+    @Override
+    public int countByExample(AchievementInfo data) {
+        return (int) d.countByExample(new AchievementInfoExample());
+    }
+
+    /**
      * 更新记录
      *
      * @param data

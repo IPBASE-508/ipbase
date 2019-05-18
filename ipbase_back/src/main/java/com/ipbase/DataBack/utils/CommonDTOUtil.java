@@ -1,5 +1,7 @@
 package com.ipbase.DataBack.utils;
 
+import com.ipbase.DataBack.dto.CommonDTO;
+
 /**
  * @author tianyi
  * @date 2018-04-29 01:57

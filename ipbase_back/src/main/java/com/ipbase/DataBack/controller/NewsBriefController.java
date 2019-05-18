@@ -2,7 +2,7 @@ package com.ipbase.DataBack.controller;
 
 import com.ipbase.DataBack.entity.NewsBrief;
 import com.ipbase.DataBack.service.NewsBriefService;
-import com.ipbase.DataBack.utils.CommonDTO;
+import com.ipbase.DataBack.dto.CommonDTO;
 import com.ipbase.DataBack.utils.CommonDTOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -74,10 +74,12 @@ public class NewsBriefController implements CommonController<NewsBrief>{
      * @apiParam {int} id 文章简要id
      * @apiParam {String} title 文章标题
      * @apiParam {String} brief 文章简述
+     * @apiParam {int} state 文章状态(0=草稿，1=已发布，-1=删除)
      * @apiSuccessExample Success-Request:
      * {
      *     id:2
      *     title:关于蓝桥杯比赛结果的新闻
+     *     state:1
      * }
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
@@ -267,6 +269,56 @@ public class NewsBriefController implements CommonController<NewsBrief>{
                 return CommonDTOUtil.error(403,"请传入创建者id",data);
             }
             return CommonDTOUtil.success(service.listByObjectPage(data));
+        }catch (Exception e){
+            e.printStackTrace();
+            return CommonDTOUtil.error(500,e.getMessage(),data);
+        }
+    }
+
+    /**
+     * @api {get} /news/brief/pageByAuthorAndState 按作者与文章状态分页获取文章
+     * @apiGroup NewsBrief
+     * @apiParam {int} authorId 作者账号id
+     * @apiParam {int} state 文章状态(0=草稿，1=已发布，-1=删除)
+     * @apiParam {int} page 页号
+     * @apiParam {int} rows 每页行数
+     * @apiSuccessExample Success-Request:
+     * {
+     *     authorId:1
+     *     state:0
+     * }
+     * @apiUse CommonDTO
+     * @apiSuccessExample Success-Response:
+     * {
+     *     "resultCode": 200,
+    "resultMsg": "成功",
+    "data": [
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 1,
+    "title": "恭喜蓝桥杯获奖的同学们",
+    "brief": "蓝桥杯的获奖名单出来了，快来了解一下吧",
+    "updateTime": "2019-05-09T06:23:19.000+0000",
+    "createTime": "2019-05-09T06:23:19.000+0000",
+    "author": "管理员0",
+    "authorId": 1,
+    "state": 0,
+    "visit": 0
+    }
+    ]
+     * }
+     */
+    @GetMapping("/pageByAuthorAndState")
+    public CommonDTO listByAuthorAndState(NewsBrief data) {
+        try{
+            if (data.getAuthorId() == 0){
+                return CommonDTOUtil.error(403,"请传入创建者id",data);
+            }
+            return CommonDTOUtil.success(service.listByStatePage(data));
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);

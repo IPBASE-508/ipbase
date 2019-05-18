@@ -71,7 +71,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/achievements/one",
-    "title": "获取单个成果详情(TODO 欠加图片)",
+    "title": "获取单个成果详情",
     "group": "Achievement",
     "parameter": {
       "fields": {
@@ -95,7 +95,7 @@ define({ "api": [
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地官网的后端系统做完第一版了！\",\n    \"brief\": \"以后大家可以用来管理官网的数据，可以找人做展示网站了\",\n    \"author\": \"曾天臆\",\n    \"authorId\": 1,\n    \"createTime\": \"2019-05-07T08:16:57.000+0000\"\n    }\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地官网的后端系统做完第一版了！\",\n    \"brief\": \"以后大家可以用来管理官网的数据，可以找人做展示网站了\",\n    \"author\": \"曾天臆\",\n    \"authorId\": 1,\n    \"createTime\": \"2019-05-07T08:16:57.000+0000\",\n    \"pictures\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地logo.png\",\n    \"achievementId\": 1,\n    \"createTime\": \"2019-05-13T23:47:25.000+0000\"\n    },\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 2,\n    \"name\": \"哈哈哈开心.jpg\",\n    \"achievementId\": 1,\n    \"createTime\": \"2019-05-13T23:47:50.000+0000\"\n    }\n    ]\n    }\n}",
           "type": "json"
         }
       ],
@@ -209,7 +209,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/achievements/add",
-    "title": "添加成果(TODO 欠文件上传)",
+    "title": "添加成果",
     "group": "Achievement",
     "parameter": {
       "fields": {
@@ -472,9 +472,133 @@ define({ "api": [
     "url": "",
     "version": "0.0.0",
     "filename": "./doc/main.js",
-    "group": "F__study_jidi_project_ipbase_back_doc_main_js",
-    "groupTitle": "F__study_jidi_project_ipbase_back_doc_main_js",
+    "group": "F__study_jidi_project_ipbase_ipbase_back_doc_main_js",
+    "groupTitle": "F__study_jidi_project_ipbase_ipbase_back_doc_main_js",
     "name": ""
+  },
+  {
+    "type": "post",
+    "url": "/file/mutiUpload/noName",
+    "title": "批量上传，返回新文件名",
+    "group": "File",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "file[]",
+            "optional": false,
+            "field": "file",
+            "description": "<p>多个文件（参数名需一样）</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{\n    // form-data\n    file: 文件1\n    file: 文件2\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    \"1557759632501.jpg\",\n    \"1557759632503.jpg\"\n    ]\n}",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>数据主体</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/ipbase/DataBack/controller/FileController.java",
+    "groupTitle": "文件",
+    "name": "PostFileMutiuploadNoname"
+  },
+  {
+    "type": "post",
+    "url": "/file/mutiUpload/withName",
+    "title": "上传文件，保留原文件名",
+    "group": "File",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "file[]",
+            "optional": false,
+            "field": "file",
+            "description": "<p>多个文件（参数名需一样）</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{\n    // form-data\n    file: 文件1\n    file: 文件2\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    \"japan50.jpg\",\n    \"sihunzhiyu.png\"\n    ]\n}",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>数据主体</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/ipbase/DataBack/controller/FileController.java",
+    "groupTitle": "文件",
+    "name": "PostFileMutiuploadWithname"
   },
   {
     "type": "get",
@@ -686,7 +810,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/materials/add",
-    "title": "添加资料(TODO 欠文件上传)",
+    "title": "添加资料",
     "group": "Material",
     "parameter": {
       "fields": {
@@ -703,7 +827,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>资料名称(标题)</p>"
+            "description": "<p>资料文件名(同时也将会作为标题)</p>"
           },
           {
             "group": "Parameter",
@@ -726,12 +850,12 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Request:",
-          "content": "{}",
+          "content": "{\n    authorId: 1\n    name: 高数复习资料.zip\n    author: 管理员0\n    description: 前人整理的复习资料，有需要的小伙伴尽管拿去吧\n}",
           "type": "json"
         },
         {
           "title": "Success-Response:",
-          "content": "{}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": 1\n}",
           "type": "json"
         }
       ],
@@ -1769,6 +1893,75 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/picture/list",
+    "title": "分页获取所有图片",
+    "group": "Picture",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "page",
+            "description": "<p>页号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "rows",
+            "description": "<p>每页行数</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{}",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>数据主体</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/ipbase/DataBack/controller/PictureInfoController.java",
+    "groupTitle": "成果图片",
+    "name": "GetPictureList"
+  },
+  {
+    "type": "get",
     "url": "/picture/one",
     "title": "获取单张图片信息",
     "group": "Picture",
@@ -1906,78 +2099,9 @@ define({ "api": [
     "name": "GetPicturePagebyachievement"
   },
   {
-    "type": "method",
-    "url": "/picture/list",
-    "title": "分页获取所有图片",
-    "group": "Picture",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "page",
-            "description": "<p>页号</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "rows",
-            "description": "<p>每页行数</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Request:",
-          "content": "{}",
-          "type": "json"
-        },
-        {
-          "title": "Success-Response:",
-          "content": "{}",
-          "type": "json"
-        }
-      ],
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Integer",
-            "optional": false,
-            "field": "resultCode",
-            "description": "<p>响应结果</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "resultMsg",
-            "description": "<p>结果描述</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "data",
-            "description": "<p>数据主体</p>"
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "./src/main/java/com/ipbase/DataBack/controller/PictureInfoController.java",
-    "groupTitle": "成果图片",
-    "name": "MethodPictureList"
-  },
-  {
     "type": "post",
-    "url": "/picture/add",
-    "title": "新增图片(TODO 欠文件上传)",
+    "url": "/picture/addByAchievement",
+    "title": "新增图片",
     "group": "Picture",
     "parameter": {
       "fields": {
@@ -1991,10 +2115,10 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "String[]",
             "optional": false,
-            "field": "name",
-            "description": "<p>图片名称</p>"
+            "field": "names",
+            "description": "<p>图片名称数组</p>"
           }
         ]
       }
@@ -2041,7 +2165,7 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "./src/main/java/com/ipbase/DataBack/controller/PictureInfoController.java",
     "groupTitle": "成果图片",
-    "name": "PostPictureAdd"
+    "name": "PostPictureAddbyachievement"
   },
   {
     "type": "post",

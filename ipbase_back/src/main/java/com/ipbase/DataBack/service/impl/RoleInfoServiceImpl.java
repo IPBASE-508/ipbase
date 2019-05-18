@@ -31,6 +31,16 @@ public class RoleInfoServiceImpl implements RoleInfoService {
     }
 
     /**
+     * 条件：无
+     * @param data
+     * @return
+     */
+    @Override
+    public int countByExample(RoleInfo data) {
+        return (int) d.countByExample(new RoleInfoExample());
+    }
+
+    /**
      * 更新记录
      *
      * @param data

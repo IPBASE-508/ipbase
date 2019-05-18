@@ -1,6 +1,6 @@
 package com.ipbase.DataBack.controller;
 
-import com.ipbase.DataBack.utils.CommonDTO;
+import com.ipbase.DataBack.dto.CommonDTO;
 
 /**
  * @author tianyi

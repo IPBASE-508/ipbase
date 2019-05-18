@@ -3,6 +3,7 @@ package com.ipbase.DataBack.service.impl;
 import com.ipbase.DataBack.dao.NewsDetailMapper;
 import com.ipbase.DataBack.entity.NewsDetail;
 import com.ipbase.DataBack.entity.example.NewsDetailExample;
+import com.ipbase.DataBack.service.NewsBriefService;
 import com.ipbase.DataBack.service.NewsDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,9 @@ public class NewsDetailServiceImpl implements NewsDetailService {
     @Autowired
     private NewsDetailMapper d;
 
+    @Autowired
+    private NewsBriefService newsBriefService;
+
     /**
      * 添加记录
      *
@@ -28,6 +32,11 @@ public class NewsDetailServiceImpl implements NewsDetailService {
     @Override
     public int addSelective(NewsDetail data) {
         return d.insertSelective(data);
+    }
+
+    @Override
+    public int countByExample(NewsDetail data) {
+        return 0;
     }
 
     /**
@@ -105,13 +114,18 @@ public class NewsDetailServiceImpl implements NewsDetailService {
      */
     @Override
     public List<NewsDetail> listByObjectPage(NewsDetail data) {
+        int briefId = data.getBriefId();
+        // 文章的阅读数量 +1
+        newsBriefService.plusCountById(briefId);
+
+        // 查询新闻详情并返回
         NewsDetailExample example = new NewsDetailExample();
         data.setPageStart( data.getRows() * (data.getPage() - 1) );
         example.setPage(data.getPage());
         example.setPageStart(data.getPageStart());
         example.setRows(data.getRows());
 
-        example.or().andBriefIdEqualTo(data.getBriefId());
+        example.or().andBriefIdEqualTo(briefId);
 
         return d.selectByExample(example);
     }

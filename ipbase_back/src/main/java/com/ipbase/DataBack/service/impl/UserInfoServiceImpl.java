@@ -31,6 +31,16 @@ public class UserInfoServiceImpl implements UserInfoService {
     }
 
     /**
+     * 条件：无
+     * @param data
+     * @return
+     */
+    @Override
+    public int countByExample(UserInfo data) {
+        return (int) d.countByExample(new UserInfoExample());
+    }
+
+    /**
      * 更新记录
      *
      * @param data

@@ -31,6 +31,18 @@ public class NewsBriefServiceImpl implements NewsBriefService {
     }
 
     /**
+     * 条件：状态
+     * @param data
+     * @return
+     */
+    @Override
+    public int countByExample(NewsBrief data) {
+        NewsBriefExample example = new NewsBriefExample();
+        example.or().andStateEqualTo(data.getState());
+        return (int) d.countByExample(example);
+    }
+
+    /**
      * 更新记录
      *
      * @param data
@@ -126,5 +138,42 @@ public class NewsBriefServiceImpl implements NewsBriefService {
         }
 
         return d.selectByExample(example);
+    }
+
+    /**
+     * 按作者的文章状态分页获取文章
+     * @param data
+     * @return
+     */
+    @Override
+    public List<NewsBrief> listByStatePage(NewsBrief data) {
+        NewsBriefExample example = new NewsBriefExample();
+        data.setPageStart( data.getRows() * (data.getPage() - 1) );
+        example.setPage(data.getPage());
+        example.setPageStart(data.getPageStart());
+        example.setRows(data.getRows());
+
+        int state = data.getState();
+        int authorId = data.getAuthorId();
+        example.or()
+                .andStateEqualTo(state)
+                .andAuthorIdEqualTo(authorId);
+
+        return d.selectByExample(example);
+    }
+
+    /**
+     * 传入id 使访问量+1
+     * @param briefId
+     * @return
+     */
+    @Override
+    public int plusCountById(int briefId) {
+        NewsBrief newsBrief = new NewsBrief();
+        newsBrief.setId(briefId);
+        newsBrief = this.getOneById(newsBrief);
+        newsBrief.setVisit( newsBrief.getVisit() + 1 );
+
+        return this.updateSelective(newsBrief);
     }
 }
