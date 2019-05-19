@@ -7,7 +7,7 @@ import java.util.Date;
  * 新闻简要信息表
  */
 public class NewsBrief extends PageEntity implements Serializable {
-    private Integer id;
+    private int id;
 
     private String title;
 
@@ -19,15 +19,15 @@ public class NewsBrief extends PageEntity implements Serializable {
 
     private String author;
 
-    private Integer authorId;
+    private int authorId;
 
-    private Integer state;
+    private int state;
 
-    private Integer visit;
+    private int visit;
 
     private static final long serialVersionUID = 1L;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
@@ -75,7 +75,7 @@ public class NewsBrief extends PageEntity implements Serializable {
         this.author = author == null ? null : author.trim();
     }
 
-    public Integer getAuthorId() {
+    public int getAuthorId() {
         return authorId;
     }
 
@@ -83,7 +83,7 @@ public class NewsBrief extends PageEntity implements Serializable {
         this.authorId = authorId;
     }
 
-    public Integer getState() {
+    public int getState() {
         return state;
     }
 
@@ -91,7 +91,7 @@ public class NewsBrief extends PageEntity implements Serializable {
         this.state = state;
     }
 
-    public Integer getVisit() {
+    public int getVisit() {
         return visit;
     }
 

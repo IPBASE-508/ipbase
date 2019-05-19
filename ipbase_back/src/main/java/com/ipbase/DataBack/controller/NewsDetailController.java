@@ -1,6 +1,7 @@
 package com.ipbase.DataBack.controller;
 
 import com.ipbase.DataBack.entity.NewsDetail;
+import com.ipbase.DataBack.service.NewsBriefService;
 import com.ipbase.DataBack.service.NewsDetailService;
 import com.ipbase.DataBack.dto.CommonDTO;
 import com.ipbase.DataBack.utils.CommonDTOUtil;
@@ -21,6 +22,9 @@ public class NewsDetailController implements CommonController<NewsDetail>{
     @Autowired
     private NewsDetailService service;
 
+    @Autowired
+    private NewsBriefService newsBriefService;
+
     /**
      * @apiDefine NewsDetail 新闻详情
      */
@@ -30,6 +34,7 @@ public class NewsDetailController implements CommonController<NewsDetail>{
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**
@@ -118,7 +123,7 @@ public class NewsDetailController implements CommonController<NewsDetail>{
     @PostMapping("/delete")
     public CommonDTO delete(NewsDetail data) {
         try{
-            if (data.getId() == 0 || data.getIds().length == 0){
+            if (data.getId() == 0 && data.getIds() == null){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
             return CommonDTOUtil.success(service.delete(data));
@@ -140,22 +145,7 @@ public class NewsDetailController implements CommonController<NewsDetail>{
      * }
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
-     * {
-     *     "resultCode": 200,
-    "resultMsg": "成功",
-    "data": [
-    {
-    "ids": null,
-    "rows": 20,
-    "page": 0,
-    "pageStart": 0,
-    "message": null,
-    "id": 1,
-    "briefId": 1,
-    "content": "<h3>获奖名单如下:</h3><ul><li>学生1</li><li>学生2</li></ul>"
-    }
-    ]
-     * }
+     * {}
      */
     @Override
     @GetMapping("/list")
@@ -211,8 +201,6 @@ public class NewsDetailController implements CommonController<NewsDetail>{
      * @api {get} /news/detail/pageByBrief 按文章简要获取文章详情
      * @apiGroup NewsDetail
      * @apiParam {int} briefId 文章简要id
-     * @apiParam {int} page 页号
-     * @apiParam {int} rows 每页行数
      * @apiSuccessExample Success-Request:
      * {
      *     briefId:1
@@ -222,7 +210,8 @@ public class NewsDetailController implements CommonController<NewsDetail>{
      * {
      *     "resultCode": 200,
     "resultMsg": "成功",
-    "data": {
+    "data": [
+    {
     "ids": null,
     "rows": 20,
     "page": 0,
@@ -232,6 +221,8 @@ public class NewsDetailController implements CommonController<NewsDetail>{
     "briefId": 1,
     "content": "<h3>获奖名单如下:</h3><ul><li>学生1</li><li>学生2</li></ul>"
     }
+    ],
+    "allDataNum": null
      * }
      */
     @Override
@@ -241,6 +232,7 @@ public class NewsDetailController implements CommonController<NewsDetail>{
             if (data.getBriefId() == 0){
                 return CommonDTOUtil.error(403,"请传入文章简要id",data);
             }
+            newsBriefService.plusCountById(data.getBriefId());
             return CommonDTOUtil.success(service.listByObjectPage(data));
         }catch (Exception e){
             e.printStackTrace();

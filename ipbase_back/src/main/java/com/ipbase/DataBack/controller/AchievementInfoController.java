@@ -39,6 +39,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**
@@ -67,6 +68,9 @@ public class AchievementInfoController implements CommonController<AchievementIn
     @PostMapping("/add")
     public CommonDTO add(AchievementInfo data){
         try{
+            if (data.getAuthorId() == 0){
+                return CommonDTOUtil.error(403,"请传入作者id",data);
+            }
             data.setCreateTime(new Date());
             return CommonDTOUtil.success(achievementInfoService.addSelective(data));
         }catch (Exception e){
@@ -131,7 +135,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
     @PostMapping("/delete")
     public CommonDTO delete(AchievementInfo data) {
         try{
-            if (data.getId() == 0 || data.getIds().length == 0){
+            if (data.getId() == 0 && data.getIds() == null){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
             return CommonDTOUtil.success(achievementInfoService.delete(data));
@@ -170,14 +174,17 @@ public class AchievementInfoController implements CommonController<AchievementIn
     "authorId": 1,
     "createTime": "2019-05-07T08:16:57.000+0000"
     }
-    ]
+    ],
+    "allDataNum": 1
      * }
      */
     @Override
     @GetMapping("/list")
     public CommonDTO list(AchievementInfo data) {
         try{
-            return CommonDTOUtil.success(achievementInfoService.listByPage(data));
+            CommonDTO rt = CommonDTOUtil.success(achievementInfoService.listByPage(data));
+            rt.setAllDataNum(achievementInfoService.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -274,7 +281,7 @@ public class AchievementInfoController implements CommonController<AchievementIn
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
      * {
-     *     "resultCode": 200,
+     *    "resultCode": 200,
     "resultMsg": "成功",
     "data": [
     {
@@ -290,7 +297,8 @@ public class AchievementInfoController implements CommonController<AchievementIn
     "authorId": 1,
     "createTime": "2019-05-07T08:16:57.000+0000"
     }
-    ]
+    ],
+    "allDataNum": 1
      * }
      */
     @Override
@@ -300,7 +308,9 @@ public class AchievementInfoController implements CommonController<AchievementIn
             if (data.getAuthorId() == 0){
                 return CommonDTOUtil.error(403,"请传入创建者id",data);
             }
-            return CommonDTOUtil.success(achievementInfoService.listByObjectPage(data));
+            CommonDTO rt = CommonDTOUtil.success(achievementInfoService.listByObjectPage(data));
+            rt.setAllDataNum(achievementInfoService.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);

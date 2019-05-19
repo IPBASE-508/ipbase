@@ -31,6 +31,7 @@ public class UserInfoController implements CommonController<UserInfo>{
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**
@@ -124,7 +125,7 @@ public class UserInfoController implements CommonController<UserInfo>{
     @PostMapping("/delete")
     public CommonDTO delete(UserInfo data) {
         try{
-            if (data.getId() == 0 || data.getIds().length == 0){
+            if (data.getId() == 0 && data.getIds() == null){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
             return CommonDTOUtil.success(service.delete(data));
@@ -162,15 +163,31 @@ public class UserInfoController implements CommonController<UserInfo>{
     "name": "曾天臆",
     "roleId": 0,
     "createTime": "2019-05-05T03:57:05.000+0000"
+    },
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 2,
+    "account": "2016072000",
+    "password": "123456",
+    "name": "管理员0",
+    "roleId": 1,
+    "createTime": "2019-05-09T06:10:53.000+0000"
     }
-    ]
+    ],
+    "allDataNum": 2
      * }
      */
     @Override
     @GetMapping("/list")
     public CommonDTO list(UserInfo data) {
         try{
-            return CommonDTOUtil.success(service.listByPage(data));
+            CommonDTO rt = CommonDTOUtil.success(service.listByPage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -257,7 +274,29 @@ public class UserInfoController implements CommonController<UserInfo>{
     "roleId": 0,
     "createTime": "2019-05-05T03:57:05.000+0000"
     }
-    ]
+    ],
+    "allDataNum": null
+     * }
+     * @apiSuccessExample Success-Response2:
+     * {
+     *     "resultCode": 200,
+    "resultMsg": "成功",
+    "data": [
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 1,
+    "account": "2016072007",
+    "password": "123456",
+    "name": "曾天臆",
+    "roleId": 0,
+    "createTime": "2019-05-05T03:57:05.000+0000"
+    }
+    ],
+    "allDataNum": null
      * }
      */
     @Override

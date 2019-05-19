@@ -33,6 +33,7 @@ public class MaterialInfoController implements CommonController<MaterialInfo>{
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**
@@ -113,7 +114,7 @@ public class MaterialInfoController implements CommonController<MaterialInfo>{
     @PostMapping("/delete")
     public CommonDTO delete(MaterialInfo data) {
         try{
-            if (data.getId() == 0 || data.getIds().length == 0){
+            if (data.getId() == 0 && data.getIds() == null){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
             return CommonDTOUtil.success(service.delete(data));
@@ -129,16 +130,26 @@ public class MaterialInfoController implements CommonController<MaterialInfo>{
      * @apiParam {int} page 页号
      * @apiParam {int} rows 每页行数
      * @apiSuccessExample Success-Request:
-     * {}
+     * {
+     *     page:1
+    rows:2
+     * }
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
-     * {}
+     * {
+     *     "resultCode": 200,
+    "resultMsg": "成功",
+    "data": [],
+    "allDataNum": 0
+     * }
      */
     @Override
     @GetMapping("/list")
     public CommonDTO list(MaterialInfo data) {
         try{
-            return CommonDTOUtil.success(service.listByPage(data));
+            CommonDTO rt = CommonDTOUtil.success(service.listByPage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -176,10 +187,19 @@ public class MaterialInfoController implements CommonController<MaterialInfo>{
      * @apiParam {int} page 页号
      * @apiParam {int} rows 每页行数
      * @apiSuccessExample Success-Request:
-     * {}
+     * {
+     *     authorId:1
+    page:1
+    rows:2
+     * }
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
-     * {}
+     * {
+     *     "resultCode": 200,
+    "resultMsg": "成功",
+    "data": [],
+    "allDataNum": 0
+     * }
      */
     @Override
     @GetMapping("/pageByAuthor")
@@ -188,7 +208,9 @@ public class MaterialInfoController implements CommonController<MaterialInfo>{
             if (data.getAuthorId() == 0){
                 return CommonDTOUtil.error(403,"请传入创建者id",data);
             }
-            return CommonDTOUtil.success(service.listByObjectPage(data));
+            CommonDTO rt = CommonDTOUtil.success(service.listByObjectPage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);

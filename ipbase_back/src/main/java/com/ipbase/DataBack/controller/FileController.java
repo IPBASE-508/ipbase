@@ -35,6 +35,7 @@ public class FileController {
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**

@@ -141,7 +141,7 @@ public class NewsBriefServiceImpl implements NewsBriefService {
     }
 
     /**
-     * 按作者的文章状态分页获取文章
+     * (按作者)、按文章状态分页获取文章
      * @param data
      * @return
      */
@@ -155,9 +155,14 @@ public class NewsBriefServiceImpl implements NewsBriefService {
 
         int state = data.getState();
         int authorId = data.getAuthorId();
-        example.or()
-                .andStateEqualTo(state)
-                .andAuthorIdEqualTo(authorId);
+        if (state != 0 && authorId != 0) {
+            example.or()
+                    .andStateEqualTo(state)
+                    .andAuthorIdEqualTo(authorId);
+        }else if (state != 0){
+            example.or()
+                    .andStateEqualTo(state);
+        }
 
         return d.selectByExample(example);
     }

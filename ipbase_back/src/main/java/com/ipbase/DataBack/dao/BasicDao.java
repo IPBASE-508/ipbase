@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
+ * 【这个接口类的存在，仅仅是为了少敲一些代码，缩短一些开发时间，可有可无】
  * @author tianyi
  * @date 2019-05-04 19:36
  */

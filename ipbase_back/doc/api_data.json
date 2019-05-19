@@ -33,7 +33,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地官网的后端系统做完第一版了！\",\n    \"brief\": \"以后大家可以用来管理官网的数据，可以找人做展示网站了\",\n    \"author\": \"曾天臆\",\n    \"authorId\": 1,\n    \"createTime\": \"2019-05-07T08:16:57.000+0000\"\n    }\n    ]\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地官网的后端系统做完第一版了！\",\n    \"brief\": \"以后大家可以用来管理官网的数据，可以找人做展示网站了\",\n    \"author\": \"曾天臆\",\n    \"authorId\": 1,\n    \"createTime\": \"2019-05-07T08:16:57.000+0000\"\n    }\n    ],\n    \"allDataNum\": 1\n}",
           "type": "json"
         }
       ],
@@ -59,6 +59,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -121,6 +128,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -171,7 +185,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地官网的后端系统做完第一版了！\",\n    \"brief\": \"以后大家可以用来管理官网的数据，可以找人做展示网站了\",\n    \"author\": \"曾天臆\",\n    \"authorId\": 1,\n    \"createTime\": \"2019-05-07T08:16:57.000+0000\"\n    }\n    ]\n}",
+          "content": "{\n   \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地官网的后端系统做完第一版了！\",\n    \"brief\": \"以后大家可以用来管理官网的数据，可以找人做展示网站了\",\n    \"author\": \"曾天臆\",\n    \"authorId\": 1,\n    \"createTime\": \"2019-05-07T08:16:57.000+0000\"\n    }\n    ],\n    \"allDataNum\": 1\n}",
           "type": "json"
         }
       ],
@@ -197,6 +211,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -280,6 +301,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -349,6 +377,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -439,6 +474,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -529,6 +571,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -591,6 +640,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -629,12 +685,12 @@
       "examples": [
         {
           "title": "Success-Request:",
-          "content": "{}",
+          "content": "{\n    page:1\n    rows:2\n}",
           "type": "json"
         },
         {
           "title": "Success-Response:",
-          "content": "{}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [],\n    \"allDataNum\": 0\n}",
           "type": "json"
         }
       ],
@@ -660,6 +716,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -722,6 +785,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -767,12 +837,12 @@
       "examples": [
         {
           "title": "Success-Request:",
-          "content": "{}",
+          "content": "{\n    authorId:1\n    page:1\n    rows:2\n}",
           "type": "json"
         },
         {
           "title": "Success-Response:",
-          "content": "{}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [],\n    \"allDataNum\": 0\n}",
           "type": "json"
         }
       ],
@@ -798,6 +868,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -881,6 +958,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -950,6 +1034,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1026,6 +1117,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1069,7 +1167,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"title\": \"恭喜蓝桥杯获奖的同学们\",\n    \"brief\": \"蓝桥杯的获奖名单出来了，快来了解一下吧\",\n    \"updateTime\": \"2019-05-09T06:23:19.000+0000\",\n    \"createTime\": \"2019-05-09T06:23:19.000+0000\",\n    \"author\": \"管理员0\",\n    \"authorId\": 1,\n    \"state\": 0,\n    \"visit\": 0\n    }\n    ]\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [],\n    \"allDataNum\": 0\n}",
           "type": "json"
         }
       ],
@@ -1095,6 +1193,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1157,6 +1262,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1168,8 +1280,8 @@
   },
   {
     "type": "get",
-    "url": "/news/brief/pageByAuthor",
-    "title": "按用户分页获取文章简要",
+    "url": "/news/brief/pageByAuthorAndState",
+    "title": "按作者与文章状态分页获取文章",
     "group": "NewsBrief",
     "parameter": {
       "fields": {
@@ -1180,6 +1292,13 @@
             "optional": false,
             "field": "authorId",
             "description": "<p>作者账号id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "state",
+            "description": "<p>文章状态(0=草稿，1=已发布，-1=删除)</p>"
           },
           {
             "group": "Parameter",
@@ -1202,7 +1321,7 @@
       "examples": [
         {
           "title": "Success-Request:",
-          "content": "{\n    authorId:1\n}",
+          "content": "{\n    authorId:1\n    state:0\n}",
           "type": "json"
         },
         {
@@ -1233,6 +1352,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1240,7 +1366,97 @@
     "version": "0.0.0",
     "filename": "./src/main/java/com/ipbase/DataBack/controller/NewsBriefController.java",
     "groupTitle": "新闻简要",
-    "name": "GetNewsBriefPagebyauthor"
+    "name": "GetNewsBriefPagebyauthorandstate"
+  },
+  {
+    "type": "get",
+    "url": "/news/brief/pageByState",
+    "title": "按用户分页获取文章简要",
+    "group": "NewsBrief",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "authorId",
+            "description": "<p>作者账号id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "state",
+            "description": "<p>文章状态(0=草稿，1=已发布，-1=已删除)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "page",
+            "description": "<p>页号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "rows",
+            "description": "<p>每页行数</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{\n    authorId:1\n    state:1\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [],\n    \"allDataNum\": 0\n}",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/ipbase/DataBack/controller/NewsBriefController.java",
+    "groupTitle": "新闻简要",
+    "name": "GetNewsBriefPagebystate"
   },
   {
     "type": "post",
@@ -1316,6 +1532,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1385,6 +1608,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1422,6 +1652,13 @@
             "optional": false,
             "field": "brief",
             "description": "<p>文章简述</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "state",
+            "description": "<p>文章状态(0=草稿，1=已发布，-1=删除)</p>"
           }
         ]
       }
@@ -1430,7 +1667,7 @@
       "examples": [
         {
           "title": "Success-Request:",
-          "content": "{\n    id:2\n    title:关于蓝桥杯比赛结果的新闻\n}",
+          "content": "{\n    id:2\n    title:关于蓝桥杯比赛结果的新闻\n    state:1\n}",
           "type": "json"
         },
         {
@@ -1461,6 +1698,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1504,7 +1748,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"briefId\": 1,\n    \"content\": \"<h3>获奖名单如下:</h3><ul><li>学生1</li><li>学生2</li></ul>\"\n    }\n    ]\n}",
+          "content": "{}",
           "type": "json"
         }
       ],
@@ -1530,6 +1774,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1592,6 +1843,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1615,20 +1873,6 @@
             "optional": false,
             "field": "briefId",
             "description": "<p>文章简要id</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "page",
-            "description": "<p>页号</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "rows",
-            "description": "<p>每页行数</p>"
           }
         ]
       }
@@ -1642,7 +1886,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"briefId\": 1,\n    \"content\": \"<h3>获奖名单如下:</h3><ul><li>学生1</li><li>学生2</li></ul>\"\n    }\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"briefId\": 1,\n    \"content\": \"<h3>获奖名单如下:</h3><ul><li>学生1</li><li>学生2</li></ul>\"\n    }\n    ],\n    \"allDataNum\": null\n}",
           "type": "json"
         }
       ],
@@ -1668,6 +1912,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1737,6 +1988,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1813,6 +2071,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1882,6 +2147,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -1920,12 +2192,12 @@
       "examples": [
         {
           "title": "Success-Request:",
-          "content": "{}",
+          "content": "{\n    page:1\n}",
           "type": "json"
         },
         {
           "title": "Success-Response:",
-          "content": "{}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地logo.png\",\n    \"achievementId\": 1,\n    \"createTime\": \"2019-05-13T23:47:25.000+0000\"\n    },\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 2,\n    \"name\": \"test123.jpg\",\n    \"achievementId\": 1,\n    \"createTime\": \"2019-05-13T23:47:50.000+0000\"\n    }\n    ],\n    \"allDataNum\": null\n}",
           "type": "json"
         }
       ],
@@ -1951,6 +2223,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2013,6 +2292,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2058,12 +2344,12 @@
       "examples": [
         {
           "title": "Success-Request:",
-          "content": "{}",
+          "content": "{\n    page:1\n    achievementId:1\n}",
           "type": "json"
         },
         {
           "title": "Success-Response:",
-          "content": "{}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"基地logo.png\",\n    \"achievementId\": 1,\n    \"createTime\": \"2019-05-13T23:47:25.000+0000\"\n    },\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 2,\n    \"name\": \"哈哈哈开心.jpg\",\n    \"achievementId\": 1,\n    \"createTime\": \"2019-05-13T23:47:50.000+0000\"\n    }\n    ],\n    \"allDataNum\": 2\n}",
           "type": "json"
         }
       ],
@@ -2089,6 +2375,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2158,6 +2451,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2227,6 +2527,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2256,7 +2563,7 @@
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>图片名称</p>"
+            "description": "<p>图片文件名称</p>"
           }
         ]
       }
@@ -2296,6 +2603,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2339,7 +2653,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"研发部成员\",\n    \"note\": \"普通研发部成员\"\n    }\n    ]\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"研发部成员\",\n    \"note\": \"普通研发部成员\"\n    }\n    ],\n    \"allDataNum\": 1\n}",
           "type": "json"
         }
       ],
@@ -2365,6 +2679,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2427,6 +2748,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2470,7 +2798,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"研发部成员\",\n    \"note\": \"普通研发部成员\"\n    }\n    ]\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"name\": \"研发部成员\",\n    \"note\": \"普通研发部成员\"\n    }\n    ],\n    \"allDataNum\": 1\n}",
           "type": "json"
         }
       ],
@@ -2496,6 +2824,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2565,6 +2900,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2634,6 +2976,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2710,6 +3059,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2753,7 +3109,7 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"account\": \"2016072007\",\n    \"password\": \"123456\",\n    \"name\": \"曾天臆\",\n    \"roleId\": 0,\n    \"createTime\": \"2019-05-05T03:57:05.000+0000\"\n    }\n    ]\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"account\": \"2016072007\",\n    \"password\": \"123456\",\n    \"name\": \"曾天臆\",\n    \"roleId\": 0,\n    \"createTime\": \"2019-05-05T03:57:05.000+0000\"\n    },\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 2,\n    \"account\": \"2016072000\",\n    \"password\": \"123456\",\n    \"name\": \"管理员0\",\n    \"roleId\": 1,\n    \"createTime\": \"2019-05-09T06:10:53.000+0000\"\n    }\n    ],\n    \"allDataNum\": 2\n}",
           "type": "json"
         }
       ],
@@ -2779,6 +3135,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2841,6 +3204,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -2903,7 +3273,12 @@
         },
         {
           "title": "Success-Response:",
-          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"account\": \"2016072007\",\n    \"password\": \"123456\",\n    \"name\": \"曾天臆\",\n    \"roleId\": 0,\n    \"createTime\": \"2019-05-05T03:57:05.000+0000\"\n    }\n    ]\n}",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"account\": \"2016072007\",\n    \"password\": \"123456\",\n    \"name\": \"曾天臆\",\n    \"roleId\": 0,\n    \"createTime\": \"2019-05-05T03:57:05.000+0000\"\n    }\n    ],\n    \"allDataNum\": null\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response2:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n    {\n    \"ids\": null,\n    \"rows\": 20,\n    \"page\": 0,\n    \"pageStart\": 0,\n    \"message\": null,\n    \"id\": 1,\n    \"account\": \"2016072007\",\n    \"password\": \"123456\",\n    \"name\": \"曾天臆\",\n    \"roleId\": 0,\n    \"createTime\": \"2019-05-05T03:57:05.000+0000\"\n    }\n    ],\n    \"allDataNum\": null\n}",
           "type": "json"
         }
       ],
@@ -2929,6 +3304,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -3012,6 +3394,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -3081,6 +3470,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -3150,6 +3546,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }
@@ -3264,6 +3667,13 @@
             "optional": false,
             "field": "data",
             "description": "<p>数据主体</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "allDataNum",
+            "description": "<p>数据库中满足条件的总条数（用于分页）</p>"
           }
         ]
       }

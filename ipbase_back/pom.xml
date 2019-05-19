@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.ipbase</groupId>
 	<artifactId>databack</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.1.3-SNAPSHOT</version>
 	<name>databack</name>
 	<description>Data system of ipbase web</description>
 

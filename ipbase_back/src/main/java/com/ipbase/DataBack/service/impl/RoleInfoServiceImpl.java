@@ -31,13 +31,20 @@ public class RoleInfoServiceImpl implements RoleInfoService {
     }
 
     /**
-     * 条件：无
+     * 条件：无、(name like)
      * @param data
      * @return
      */
     @Override
     public int countByExample(RoleInfo data) {
-        return (int) d.countByExample(new RoleInfoExample());
+        RoleInfoExample example = new RoleInfoExample();
+        String name = data.getName();
+        if (name != null){
+            example.or()
+                    .andNameLike("%" + name + "%");
+        }
+
+        return (int) d.countByExample(example);
     }
 
     /**

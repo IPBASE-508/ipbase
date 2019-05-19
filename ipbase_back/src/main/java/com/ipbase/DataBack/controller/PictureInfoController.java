@@ -33,6 +33,7 @@ public class PictureInfoController{
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**
@@ -70,7 +71,7 @@ public class PictureInfoController{
      * @api {post} /picture/update 修改图片信息
      * @apiGroup Picture
      * @apiParam {int} id 图片id
-     * @apiParam {String} name 图片名称
+     * @apiParam {String} name 图片文件名称
      * @apiSuccessExample Success-Request:
      * {}
      * @apiUse CommonDTO
@@ -104,7 +105,7 @@ public class PictureInfoController{
     @PostMapping("/delete")
     public CommonDTO delete(PictureInfo data) {
         try{
-            if (data.getId() == 0 || data.getIds().length == 0){
+            if (data.getId() == 0 && data.getIds() == null){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
             return CommonDTOUtil.success(service.delete(data));
@@ -120,10 +121,40 @@ public class PictureInfoController{
      * @apiParam {int} page 页号
      * @apiParam {int} rows 每页行数
      * @apiSuccessExample Success-Request:
-     * {}
+     * {
+     *     page:1
+     * }
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
-     * {}
+     * {
+     *     "resultCode": 200,
+    "resultMsg": "成功",
+    "data": [
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 1,
+    "name": "基地logo.png",
+    "achievementId": 1,
+    "createTime": "2019-05-13T23:47:25.000+0000"
+    },
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 2,
+    "name": "test123.jpg",
+    "achievementId": 1,
+    "createTime": "2019-05-13T23:47:50.000+0000"
+    }
+    ],
+    "allDataNum": null
+     * }
      */
     @GetMapping("/list")
     public CommonDTO list(PictureInfo data) {
@@ -165,10 +196,41 @@ public class PictureInfoController{
      * @apiParam {int} page 页号
      * @apiParam {int} rows 每页行数
      * @apiSuccessExample Success-Request:
-     * {}
+     * {
+     *     page:1
+    achievementId:1
+     * }
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
-     * {}
+     * {
+     *     "resultCode": 200,
+    "resultMsg": "成功",
+    "data": [
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 1,
+    "name": "基地logo.png",
+    "achievementId": 1,
+    "createTime": "2019-05-13T23:47:25.000+0000"
+    },
+    {
+    "ids": null,
+    "rows": 20,
+    "page": 0,
+    "pageStart": 0,
+    "message": null,
+    "id": 2,
+    "name": "哈哈哈开心.jpg",
+    "achievementId": 1,
+    "createTime": "2019-05-13T23:47:50.000+0000"
+    }
+    ],
+    "allDataNum": 2
+     * }
      */
     @GetMapping("/pageByAchievement")
     public CommonDTO listByFilter(PictureInfo data) {
@@ -176,7 +238,9 @@ public class PictureInfoController{
             if (data.getAchievementId() == 0){
                 return CommonDTOUtil.error(403,"请传入成果id",data);
             }
-            return CommonDTOUtil.success(service.listByObjectPage(data));
+            CommonDTO rt = CommonDTOUtil.success(service.listByObjectPage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);

@@ -32,6 +32,7 @@ public class NewsBriefController implements CommonController<NewsBrief>{
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**
@@ -125,7 +126,7 @@ public class NewsBriefController implements CommonController<NewsBrief>{
     @PostMapping("/delete")
     public CommonDTO delete(NewsBrief data) {
         try{
-            if (data.getId() == 0 || data.getIds().length == 0){
+            if (data.getId() == 0 && data.getIds() == null){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
             return CommonDTOUtil.success(service.delete(data));
@@ -150,31 +151,18 @@ public class NewsBriefController implements CommonController<NewsBrief>{
      * {
      *     "resultCode": 200,
     "resultMsg": "成功",
-    "data": [
-    {
-    "ids": null,
-    "rows": 20,
-    "page": 0,
-    "pageStart": 0,
-    "message": null,
-    "id": 1,
-    "title": "恭喜蓝桥杯获奖的同学们",
-    "brief": "蓝桥杯的获奖名单出来了，快来了解一下吧",
-    "updateTime": "2019-05-09T06:23:19.000+0000",
-    "createTime": "2019-05-09T06:23:19.000+0000",
-    "author": "管理员0",
-    "authorId": 1,
-    "state": 0,
-    "visit": 0
-    }
-    ]
+    "data": [],
+    "allDataNum": 0
      * }
      */
     @Override
     @GetMapping("/list")
     public CommonDTO list(NewsBrief data) {
         try{
-            return CommonDTOUtil.success(service.listByPage(data));
+            data.setState(1);
+            CommonDTO rt = CommonDTOUtil.success(service.listByStatePage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -227,48 +215,33 @@ public class NewsBriefController implements CommonController<NewsBrief>{
     }
 
     /**
-     * @api {get} /news/brief/pageByAuthor 按用户分页获取文章简要
+     * @api {get} /news/brief/pageByState 按用户分页获取文章简要
      * @apiGroup NewsBrief
      * @apiParam {int} authorId 作者账号id
+     * @apiParam {int} state 文章状态(0=草稿，1=已发布，-1=已删除)
      * @apiParam {int} page 页号
      * @apiParam {int} rows 每页行数
      * @apiSuccessExample Success-Request:
      * {
      *     authorId:1
+     *     state:1
      * }
      * @apiUse CommonDTO
      * @apiSuccessExample Success-Response:
      * {
      *     "resultCode": 200,
     "resultMsg": "成功",
-    "data": [
-    {
-    "ids": null,
-    "rows": 20,
-    "page": 0,
-    "pageStart": 0,
-    "message": null,
-    "id": 1,
-    "title": "恭喜蓝桥杯获奖的同学们",
-    "brief": "蓝桥杯的获奖名单出来了，快来了解一下吧",
-    "updateTime": "2019-05-09T06:23:19.000+0000",
-    "createTime": "2019-05-09T06:23:19.000+0000",
-    "author": "管理员0",
-    "authorId": 1,
-    "state": 0,
-    "visit": 0
-    }
-    ]
+    "data": [],
+    "allDataNum": 0
      * }
      */
     @Override
-    @GetMapping("/pageByAuthor")
+    @GetMapping("/pageByState")
     public CommonDTO listByFilter(NewsBrief data) {
         try{
-            if (data.getAuthorId() == 0){
-                return CommonDTOUtil.error(403,"请传入创建者id",data);
-            }
-            return CommonDTOUtil.success(service.listByObjectPage(data));
+            CommonDTO rt = CommonDTOUtil.success(service.listByStatePage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);

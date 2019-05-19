@@ -30,6 +30,7 @@ public class RoleInfoController implements CommonController<RoleInfo>{
      *  @apiSuccess {Integer} resultCode 响应结果
      *  @apiSuccess {String} resultMsg 结果描述
      *  @apiSuccess {Object} data 数据主体
+     *  @apiSuccess {Integer} allDataNum 数据库中满足条件的总条数（用于分页）
      */
 
     /**
@@ -115,7 +116,7 @@ public class RoleInfoController implements CommonController<RoleInfo>{
     @PostMapping("/delete")
     public CommonDTO delete(RoleInfo data) {
         try{
-            if (data.getId() == 0 || data.getIds().length == 0){
+            if (data.getId() == 0 && data.getIds() == null){
                 return CommonDTOUtil.error(403,"请传入id",data);
             }
             return CommonDTOUtil.success(service.delete(data));
@@ -151,14 +152,17 @@ public class RoleInfoController implements CommonController<RoleInfo>{
     "name": "研发部成员",
     "note": "普通研发部成员"
     }
-    ]
+    ],
+    "allDataNum": 1
      * }
      */
     @Override
     @GetMapping("/list")
     public CommonDTO list(RoleInfo data) {
         try{
-            return CommonDTOUtil.success(service.listByPage(data));
+            CommonDTO rt = CommonDTOUtil.success(service.listByPage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
@@ -229,7 +233,8 @@ public class RoleInfoController implements CommonController<RoleInfo>{
     "name": "研发部成员",
     "note": "普通研发部成员"
     }
-    ]
+    ],
+    "allDataNum": 1
      * }
      */
     @Override
@@ -239,7 +244,9 @@ public class RoleInfoController implements CommonController<RoleInfo>{
             if (data.getName() == null){
                 return CommonDTOUtil.error(403,"请传入角色名称",data);
             }
-            return CommonDTOUtil.success(service.listByObjectPage(data));
+            CommonDTO rt = CommonDTOUtil.success(service.listByObjectPage(data));
+            rt.setAllDataNum(service.countByExample(data));
+            return rt;
         }catch (Exception e){
             e.printStackTrace();
             return CommonDTOUtil.error(500,e.getMessage(),data);
