@@ -7,6 +7,7 @@
       <router-link to="/result">result</router-link>
     </div>
     <router-view/>
+    <div class="footer">版权所有</div>
   </div>
 </template>
 
@@ -28,4 +29,11 @@
     }
   }
 }
+.footer{
+  height: 50px;
+  background-color: #000;
+  line-height: 50px;
+  color: #fff;
+}
+
 </style>

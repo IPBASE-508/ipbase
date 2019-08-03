@@ -14,7 +14,16 @@ module.exports={
   },
   //打包时不生成map文件，加快打包速度
   productionSourceMap:false,
-  devServer:{
-    proxy:'https://localhost://8088'
+  devServer: {
+    // 设置代理
+    proxy: {
+      '/api': {
+        target: 'https://zengtianyi.top/ipbase',
+        changeOrigin: true,
+        pathRewrite: {
+          '/api': ''
+        }
+      }
+    }
   }
 }
