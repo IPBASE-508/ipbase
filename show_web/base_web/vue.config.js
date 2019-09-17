@@ -19,7 +19,16 @@ module.exports={
   outputDir: 'dist',
   // webpack-dev-server 相关配置
 
-  devServer:{
-    proxy:'https://localhost://8088'
+  devServer: {
+    // 设置代理
+    proxy: {
+      '/api': {
+        target: 'https://zengtianyi.top/ipbase',
+        changeOrigin: true,
+        pathRewrite: {
+          '/api': ''
+        }
+      }
+    }
   }
 }

@@ -3,12 +3,12 @@
     <div id="news-index" class="news-index-content-box">
       <div class="news-index-span"></div>
       <div class="news-index-tn-box">
-        <title-box></title-box>
+        <title-box/>
         <div class="news-index-na-box">
           <div class="news-index-newLists-box">
-            <newLists-box></newLists-box>
+            <newLists-box/>
           </div>
-          <about-box class="news-index-about-box"></about-box>
+          <about-box class="news-index-about-box"/>
         </div>
       </div>
     </div>

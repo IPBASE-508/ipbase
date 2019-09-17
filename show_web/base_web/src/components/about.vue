@@ -8,7 +8,7 @@
       <p>邮编：510000</p>
     </div>
     <p class="news-about-title">关注我们</p>
-    <div class="new-about-code"><img src="@/assets/img/code.png"></div>
+    <div class="new-about-code"><img src="../assets/img/code.png"></div>
   </div>
 </template>
 
