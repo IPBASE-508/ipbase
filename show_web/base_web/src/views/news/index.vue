@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import newLists from "./newLists.vue";
-import title from "./title.vue";
-import about from "./about.vue";
+import newLists from "@/components/newLists.vue";
+import title from "@/components/title.vue";
+import about from "@/components/about.vue";
 
 export default {
   data() {

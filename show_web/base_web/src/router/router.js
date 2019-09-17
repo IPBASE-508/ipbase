@@ -9,7 +9,25 @@ export default
   {
     path: '/data',
     name: 'data',
-    component: () => import( '@/views/data')
+    component: () => import( '@/views/data'),
+    redirect:"/yunwei",
+    children:[
+      {
+        path:'/yunwei',
+        name:'yunwei',
+        component:()=>import("@/components/File.vue")
+      },
+      {
+        path:'/chanpin',
+        name:'chanpin',
+        component:()=>import("@/components/File.vue")
+      },
+      {
+        path:'/yanfa',
+        name:'yanfa',
+        component:()=>import("@/components/File.vue")
+      }
+    ]
   },
   {
     path: '/news',
