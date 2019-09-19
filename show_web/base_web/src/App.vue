@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">index</router-link> |
-      <router-link to="/news">news</router-link>|
-      <router-link to="/data">data</router-link>|
-      <router-link to="/result">result</router-link>
+      <router-link to="/">首页</router-link> 
+      <router-link to="/news">新闻</router-link>
+      <img src="./assets/img/center-icon.png"/>
+      <router-link to="/data">资料</router-link>
+      <router-link to="/result">关于我们</router-link>
     </div>
     <router-view/>
     <div class="footer">版权所有</div>
@@ -21,11 +22,20 @@
 }
 #nav {
   padding: 30px;
+  background-color: #183350;
+  height:40px;
+  display: flex;
+  align-items: center;
+  // align-content: center;
+  justify-content:space-around;
+  font-size:18px;
+  font-weight:100;
+  font-family: "等线";
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #ffffff;
     &.router-link-exact-active {
-      color: #42b983;
+      color: #016eb1;
     }
   }
 }
@@ -35,5 +45,12 @@
   line-height: 50px;
   color: #fff;
 }
-
+#nav > img{
+  // margin:0 auto;
+  z-index:10;
+  width:130px;
+  height:130px;
+  margin-top:20px;
+  // position: relative;
+}
 </style>
