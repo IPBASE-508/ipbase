@@ -1,123 +1,26 @@
 <template>
   <div class="file">
-    <input value="获取文件" type="file" @change="changeData"/>
-    <input value="测试" type="submit" @click="getData" />
-    <div class="content">
+    <router-link :to="{path:'/detail',query: {id: item.id}}"  class="content" v-for="item in content" :key="item.id"  id="item.id">
       <div class="left">
-        <p class="title">下载文件名</p>
+        <p class="title">{{item.name}}</p>
         <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
+          <p class="time">{{item.createTime}}</p>
+          <p class="number">{{item.id}}</p>
         </div>
       </div>
-      <div class="center">文件简介</div>
+      <div class="center">{{item.brief}}</div>
       <div class="right">
-        <a href="/#/news">下载</a>
+        <a href="/#">下载</a>
       </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
+    </router-link>
+    <br>
+    <div class="new-nL-page-box">
+      <div class="new-nL-page-lbox">
+        <button v-show="page!=1" @click="lastPage" class="new-nL-btn new-nL-btn-l">上一页</button>
+        <span class="new-nL-page-span">第 {{page}} 页</span>
+        <button v-show="page!=allPages" @click="nextPage" class="new-nL-btn new-nL-btn-n">下一页</button>
       </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
-      </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
-      </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
-      </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
-      </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
-      </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
-      </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <p class="title">下载文件名</p>
-        <div class="bottom">
-          <p class="time">time</p>
-          <p class="number">number</p>
-        </div>
-      </div>
-      <div class="center">文件简介</div>
-      <div class="right">
-        <a href="/#/news">下载</a>
-      </div>
+      <span class="new-nL-allPage-span">共 {{allPages}} 页</span>
     </div>
   </div>
 </template>
@@ -127,46 +30,58 @@ export default {
   name: "File",
   data(){
     return{
-      file:[]
+      content: [],
+      allDataNum: 0,
+      page: 1,
+      rows: 5,
+      allPages: 0
     }
   },
   methods: {
-    changeData:e=>{
-      let file1 =new File(e.target.files[0]);
-      console.log(typeof file)
-      axios.post("/api/file/mutiUpload/withName",{
-        params: {
-          file: file1
-        }
-      },{headers:{'Content-Type':'multipart/form-data'}}).then(res => {
-        console.log(res);
-      }),
+    getData:function(p,r){
+      axios({
+      url:'/api/achievements/list',
+      method:'get',
+      params:{
+        page:p,
+        rows:r
+      }
+    }).then(
+      res =>{
+        this.content=res.data.data;
+      },
       function(error) {
         console.log(error);
-      };
+      }
+    );
     },
-    getData: function() {
-      axios({
-        method: "post",
-        url: "/api/file/mutiUpload/withName",
-        params: {
-          file: file
-        }
-      }).then(res => {
-        console.log(res);
-      });
+    nextPage: function() {
+      this.page++;
+      this.getData(this.page, this.rows);
+    },
+    lastPage: function() {
+      this.page--;
+      this.getData(this.page, this.rows);
     }
   },
-  // mounted: function() {
-  //   axios.get("/api/role/one", { params: { id: 1 } }).then(
-  //     function(res) {
-  //       console.log(res);
-  //     },
-  //     function(error) {
-  //       console.log(error);
-  //     }
-  //   );
-  // }
+  mounted: function() {
+    axios({
+      url:'/api/achievements/list',
+      method:'get',
+      params:{
+        page:this.page,
+        rows:this.rows
+      }
+    }).then(
+      res =>{
+        console.log(res);
+        this.content=res.data.data;
+      },
+      function(error) {
+        console.log(error);
+      }
+    );
+  }
 };
 </script>
 
@@ -202,6 +117,8 @@ export default {
 .left .title {
   margin-top: 20px;
   padding: 0 0 0 20px;
+  font-size: 18px;
+  color: black;
 }
 .left .bottom {
   display: flex;
@@ -210,7 +127,7 @@ export default {
 }
 .bottom * {
   padding: 0 10px 0 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .content .center {
   margin-top: 20px;
@@ -226,5 +143,8 @@ export default {
 }
 a {
   text-decoration: none;
+}
+.right a{
+  color: #09375b;
 }
 </style>

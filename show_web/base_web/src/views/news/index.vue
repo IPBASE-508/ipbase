@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #news-index {
   background-color: rgb(164, 191, 261);
   /* background-color: rgb(3, 113, 126); */

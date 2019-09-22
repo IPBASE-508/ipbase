@@ -21,5 +21,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+p{
+  color: black;
+}
 </style>

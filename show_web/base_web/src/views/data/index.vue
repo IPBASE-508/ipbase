@@ -6,8 +6,8 @@
     <div class="center">
       <div class="guide">
         <router-link to="/yunwei">运维部</router-link>
-        <router-link to="/chanpin">产品部</router-link>
-        <router-link to="/yanfa">研发部</router-link>
+        <router-link to="/yunwei">产品部</router-link>
+        <router-link to="/yunwei">研发部</router-link>
       </div>
       <div class="box">
         <router-view/>
@@ -73,7 +73,7 @@ export default {
   text-align: left;
   height: auto;
   left: 1190px;
-  top: -740px;
+  top: -275px;
   display: flex;
   flex-direction: column;
 }

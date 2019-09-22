@@ -16,16 +16,6 @@ export default
         path:'/yunwei',
         name:'yunwei',
         component:()=>import("@/components/File.vue")
-      },
-      {
-        path:'/chanpin',
-        name:'chanpin',
-        component:()=>import("@/components/File.vue")
-      },
-      {
-        path:'/yanfa',
-        name:'yanfa',
-        component:()=>import("@/components/File.vue")
       }
     ]
   },
@@ -38,5 +28,10 @@ export default
     path: '/result',
     name: 'result',
     component: () => import( '@/views/result')
+  },
+  {
+    path: '/detail',
+    name: 'detail',
+    component: () => import( '@/views/detail')
   }
 ]
