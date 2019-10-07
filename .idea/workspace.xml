@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f08113e-92a8-4516-be01-ea8dd2980735" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_sys/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_sys/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/apidoc.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/apidoc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/api_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/api_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/api_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/api_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/api_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/api_project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/api_project.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/api_project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/locale.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/locale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/pt_br.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/pt_br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/locales/zh_cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/locales/zh_cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/utils/handlebars_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/utils/handlebars_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/utils/send_sample_request.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/utils/send_sample_request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/diff_match_patch.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/diff_match_patch.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/handlebars.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/handlebars.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/list.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/lodash.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/lodash.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/path-to-regexp/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/path-to-regexp/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/path-to-regexp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/path-to-regexp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/polyfill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-Splus.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-Splus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-aea.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-aea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-agc.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-agc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-apollo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-cbm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-cbm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-cl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-cl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-clj.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-clj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-css.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-dart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-el.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-erl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-erl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-erlang.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-erlang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-fs.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-fs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-go.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-go.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-hs.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-hs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lasso.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lasso.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lassoscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lassoscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-latex.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-latex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lgt.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lgt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lisp.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lisp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ll.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-llvm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-llvm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-logtalk.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-logtalk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ls.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lsp.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lsp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lua.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-lua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-matlab.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-matlab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ml.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-mumps.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-mumps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-n.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-nemerle.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-nemerle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-pascal.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-pascal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-proto.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-proto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-r.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-r.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-rd.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-rd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-rkt.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-rkt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-rust.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-rust.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-s.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-s.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-scala.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-scala.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-scm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-scm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-sql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ss.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-ss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-swift.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-swift.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-tcl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-tcl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-tex.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-tex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vb.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vbs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vhd.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vhd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vhdl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-vhdl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-wiki.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-wiki.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-xq.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-xq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-xquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-xquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-yaml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-yml.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/lang-yml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/run_prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/prettify/run_prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/require.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/require.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/doc/vendor/webfontloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/doc/vendor/webfontloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/sql/ipbase_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/sql/ipbase_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/DatabackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/DatabackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/config/PathConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/config/PathConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/AchievementInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/AchievementInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/MaterialInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/MaterialInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/NewsBriefController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/NewsBriefController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/NewsDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/NewsDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/PictureInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/PictureInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/RoleInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/RoleInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/AchievementInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/AchievementInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/BasicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/BasicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/MaterialInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/MaterialInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/NewsBriefMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/NewsBriefMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/NewsDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/NewsDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/PictureInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/PictureInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/RoleInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/RoleInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dao/UserInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dto/AchievementInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dto/AchievementInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dto/CommonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/dto/CommonDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/AchievementInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/AchievementInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/MaterialInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/MaterialInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/NewsBrief.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/NewsBrief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/NewsDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/NewsDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/PageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/PageEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/PictureInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/PictureInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/RoleInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/RoleInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/AchievementInfoExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/AchievementInfoExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/MaterialInfoExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/MaterialInfoExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/NewsBriefExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/NewsBriefExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/NewsDetailExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/NewsDetailExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/PictureInfoExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/PictureInfoExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/RoleInfoExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/RoleInfoExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/UserInfoExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/entity/example/UserInfoExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/AchievementInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/AchievementInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/CrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/CrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/MaterialInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/MaterialInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/NewsBriefService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/NewsBriefService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/NewsDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/NewsDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/PictureInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/PictureInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/RoleInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/RoleInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/UserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/AchievementInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/AchievementInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/MaterialInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/MaterialInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/NewsBriefServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/NewsBriefServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/NewsDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/NewsDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/PictureInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/PictureInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/RoleInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/RoleInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/utils/CommonDTOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/utils/CommonDTOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/java/com/ipbase/DataBack/utils/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/AchievementInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/AchievementInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/MaterialInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/MaterialInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/NewsBriefMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/NewsBriefMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/NewsDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/NewsDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/PictureInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/PictureInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/RoleInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/RoleInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipbase_back/src/test/java/com/ipbase/DataBack/DatabackApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipbase_back/src/test/java/com/ipbase/DataBack/DatabackApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/public/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/public/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/components/File.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/components/File.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/components/Search_box.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/components/Search_box.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/components/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/components/about.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/components/newLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/components/newLists.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/components/title.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/components/title.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/store/module/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/store/module/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/views/data/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/views/data/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/views/detail/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/views/detail/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/views/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/views/index/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/views/news/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/views/news/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/src/views/result/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/src/views/result/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_web/base_web/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/show_web/base_web/vue.config.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/show_web/base_web/node_modules/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/show_web/base_web/src/components/indexpicture.vue" />
+        <option value="$PROJECT_DIR$/show_web/base_web/src/views/index/index.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1032" />
+    <option name="y" value="402" />
+    <option name="width" value="753" />
+    <option name="height" value="960" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ipbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipbase" type="462c0819:PsiDirectoryNode" />
+              <item name="show_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipbase" type="462c0819:PsiDirectoryNode" />
+              <item name="show_web" type="462c0819:PsiDirectoryNode" />
+              <item name="base_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/show_web/base_web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/show_web/base_web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f08113e-92a8-4516-be01-ea8dd2980735" name="默认的" comment="" />
+      <created>1569143194076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569143194076</updated>
+      <workItem from="1569143196501" duration="1026000" />
+      <workItem from="1570247807345" duration="10907000" />
+      <workItem from="1570287066495" duration="882000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12815000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49642858" visible="true" weight="0.24980111" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.50357145" side_tool="true" visible="true" weight="0.24980111" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="运行" order="7" visible="true" weight="0.32795697" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32795697" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="12" />
+      <window_info anchor="bottom" id="找到" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49642858" visible="true" weight="0.24980111" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.50357145" side_tool="true" visible="true" weight="0.24980111" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
+      <window_info anchor="bottom" id="运行" order="7" weight="0.32857144" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32857144" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="12" />
+      <window_info anchor="bottom" id="找到" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/views/result/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/views/data/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/components/Search_box.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/assets/img/code.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/components/newLists.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/components/title.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6216.28360/carousel.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6216.28553/carousel.js" />
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/assets/img/background-head.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/assets/img/center-icon.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/assets/img/center-icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/assets/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-436" />
+      </provider>
+    </entry>
+    <entry file="file://D:/vuecarousel/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/views/index/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/views/news/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/views/detail/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/components/about.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/components/File.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_web/base_web/src/components/indexpicture.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="112" column="33" selection-start-line="112" selection-end-line="112" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
